@@ -33,7 +33,7 @@ model Server {
   id String @id @default(uuid())
   name String
   imageUrl String @db.Text
-  inviteCode String @db.Text
+  inviteCode String @unique
 
   profileId String
   //fields = 외래키, references = 기본키
